@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Prueba</title>
+</head>
+<nav>
+    <div id="brand">
+      <img src="https://firebasestorage.googleapis.com/v0/b/fir-app-6e127.appspot.com/o/1660718596584.jfif?alt=media&token=cbb05c08-dada-46f4-acb5-bb8c902d4507" id="logo"></img>
+      
+    </div>
+    
+
+</nav>
+<body>
+
+    <div class="container">
+        
+        <form   id="form">
+            <div>
+                <label for="lenguajeInicial">Traducir :</label>
+                <select class="form-select" name="lenguajeInicial" id="lenguajeInicial">  
+                </select>
+                <br/>
+                <label for="text">Ingresa el texto a traducir</label><br>
+                <textarea class="form-control z-depth-1" name="text" id="text" ></textarea>
+            </div>
+            
+            
+        </form>
+
+        <div class="result">
+            <label for="lenguajeFinal">al:</label>
+            <select class="form-select" name="l" id="lenguajeFinal"></select>
+            <br/>
+            <label for="Result">Resultado:</label><br>
+            <textarea class="form-control z-depth-1" name="result" id="result" ></textarea>
+        </div>
+        <br/>
+        
+
+    </div>
+    
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <br/>
+        <button  class="btn btn-primary"  id="submit" type="submit" >Traducir</button>
+    </div>
+    <script src="./traduccion.js"></script>
+</body>
+</html>
